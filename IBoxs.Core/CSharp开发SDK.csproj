@@ -58,11 +58,9 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
     <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.8.6\lib\net45\Unity.Abstractions.dll</HintPath>
     </Reference>
@@ -141,10 +139,12 @@
     <Import Project="..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets')" />
   </ImportGroup>
   <PropertyGroup>
-    <PreBuildEvent>if exist "$(TargetName).OQ.dll" (del /F /A /Q "$(TargetName).XiaoLz.dll" )</PreBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>if exist "$(TargetName).dll" (
+    <PostBuildEvent>if exist "$(TargetName).XiaoLz.dll" (del /F /A /Q "$(TargetName).XiaoLz.dll" )
+if exist "$(TargetName).dll" (
 rename "$(TargetName).dll" "$(TargetName).XiaoLz.dll" 
 )</PostBuildEvent>
   </PropertyGroup>
