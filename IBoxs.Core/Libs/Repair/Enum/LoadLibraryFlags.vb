@@ -1,0 +1,23 @@
+﻿Imports System
+
+Namespace IBoxs.Core.Repair.Enum
+    ' 
+    ' 	 *	移植自: 00.00.dotnetRedirect 插件, 原作者: 成音S. 引用请带上此注释
+    ' 	 *	论坛地址: https://cqp.cc/t/42920
+    ' 	 
+    <Flags>
+    Public Enum LoadLibraryFlags As UInteger
+        None = 0
+        DONT_RESOLVE_DLL_REFERENCES = &H00000001
+        LOAD_IGNORE_CODE_AUTHZ_LEVEL = &H00000010
+        LOAD_LIBRARY_AS_DATAFILE = &H00000002
+        LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE = &H00000040
+        LOAD_LIBRARY_AS_IMAGE_RESOURCE = &H00000020
+        LOAD_LIBRARY_SEARCH_APPLICATION_DIR = &H00000200
+        LOAD_LIBRARY_SEARCH_DEFAULT_DIRS = &H00001000
+        LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR = &H00000100
+        LOAD_LIBRARY_SEARCH_SYSTEM32 = &H00000800
+        LOAD_LIBRARY_SEARCH_USER_DIRS = &H00000400
+        LOAD_WITH_ALTERED_SEARCH_PATH = &H00000008
+    End Enum
+End Namespace

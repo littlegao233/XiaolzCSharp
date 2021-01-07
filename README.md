@@ -1,19 +1,20 @@
-# XiaolzCSharp
-小栗子C# SDK  
-框架主页: https://www.xiaolz.cn/    
-使用前先在VS还原nuget包.    
-    
+## 简介
 
-写了一些基本事件，QQ权限，撤回反撤回，加群加好友提示等。
+* IBoxs.SDK  是为了方便 .Net 平台开发者高效开发 酷Q应用 的开发框架。封装酷Q 提供的接口，提供了安全高效的Api，同时抽象了事件中的基础数据类型。
+* 基于Native.SDK（酷Q的C#SDK）产生（感谢杰哥等大佬的付出），由Native.SDK改装产生。
+* 目前还没有将全部Ono的接口支持，仅完成部分，仍在更新中。
 
-![image](https://github.com/laomms/XiaolzCSharp/blob/master/admin.png)   
+## 特点
 
-![image](https://github.com/laomms/XiaolzCSharp/blob/master/dllexport2.gif)   
+* 支持原生导出函数，不需要前置插件作为服务端。(能够在 .Net 平台中导出 C/C++ 可用的导出函数)
 
-https://youtu.be/pk-73TZQruk 
+* 支持包括 WebServices 在内的所有 .Net 项目进行交互。
 
+* 支持编译整合DLL。(在编译的同时，对所有使用到的程序集进行整合打包，保证最终结果只有 应用名.dll)
 
+* 支持自由调整 .Net Framework 版本
 
+* 使用 UTF-8 编码，并且在托管和非托管之间启用了 GB18030 编码的转换
 
-
+* 目前仅支持 .Net Framework 4.5
 
